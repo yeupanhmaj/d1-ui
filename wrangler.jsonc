@@ -1,0 +1,21 @@
+{
+	"$schema": "./node_modules/wrangler/config-schema.json",
+	"name": "d1-ui",
+	"compatibility_date": "2026-06-05",
+	"compatibility_flags": ["nodejs_als"],
+	"main": ".svelte-kit/cloudflare/_worker.js",
+	"assets": {
+		"binding": "ASSETS",
+		"directory": ".svelte-kit/cloudflare"
+	},
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "worker-db",
+			"database_id": "3a213247-7e55-4111-83f6-2a558efeb9df",
+			"migrations_dir": "drizzle"
+		}
+	],
+	"workers_dev": true,
+	"preview_urls": true
+}
